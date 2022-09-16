@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TodoKt</string>
+    <string name="retrofit_with_rxjava">Retrofit with RxJava</string>
+    <string name="room_list">Room List</string>
+    <string name="i_want_to_become_android_developer">I want to become Android Developer</string>
+    <string name="mvvm_android">MVVM Android</string>
+    <string name="please_username">Please enter username</string>
+    <string name="please_password">Please enter password</string>
+    <string name="no_network">No Network Available</string>
+    <string name="user_not_found">User not found</string>
+    <string name="morpheus">morpheus</string>
+    <string name="leader">leader</string>
+    <string name="containt">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="updated">Updated…!</string>
+    <string name="insert">Insert…!</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="select_type">Please select type</string>
+    <string name="enter_time">Please enter time</string>
+    <string name="enter_desc">Please enter description</string>
+    <string name="enter_title">Please enter title</string>
+    <string name="pm">PM</string>
+    <string name="am">AM</string>
+    <string name="login">Login</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="todo">To do…</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="type">Type</string>
+    <string name="time">Time</string>
+    <string name="date_amp_time"><![CDATA[Date & Time]]></string>
+    <string name="save">Save</string>
+    <string name="salary">Salary</string>
+    <string name="enter_salary">Please enter salary</string>
+    <string name="welcome_login">Welcome Login</string>
+    <string name="welcome">Welcome…</string>
+    <string name="todo_list">Todo List</string>
+
+</resources>

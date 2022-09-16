@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:barrierAllowsGoneWidgets="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".todolist.TodoListActivity">
+
+        <TextView
+            android:id="@+id/action_bar_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:fontFamily="@font/font"
+            android:includeFontPadding="false"
+            android:padding="8dp"
+            android:text="@string/todo_list"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageLogout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="TODO"
+            android:padding="5dp"
+            android:src="@drawable/logout"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_room"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/action_bar_room"
+            app:tint="@color/white" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/btnSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/action_bar_room">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtNoData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:text="Nothing Todo!!!!"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/font"
+            android:includeFontPadding="false"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
